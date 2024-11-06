@@ -2,6 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import re
+import html
+def decodeStr(encodedString):
+    return encodedString.encode("latin1").decode("utf-8")
 def dfs_search(tag, tagName=None, className=None, role=None):
     """
     this function will do a dfs on the html to find the tag that we are looking for , 
@@ -80,23 +83,23 @@ def findProductList(baseUrl):
     dict["Products"]={}
     dict["Essentials"]={}
     for tag in productList[0].contents :
-        dict["Products"][tag.find('a').contents[0]]=baseUrl+tag.find('a').get("href")
+        dict["Products"][decodeStr(tag.find('a').contents[0])]=baseUrl+tag.find('a').get("href")
     for tag in productList[1].contents :
-        dict["Essentials"][tag.find('a').contents[0]]=baseUrl+tag.find('a').get("href")
+        dict["Essentials"][decodeStr(tag.find('a').contents[0])]=baseUrl+tag.find('a').get("href")
     return dict
 def main():
     baseUrl = "https://reviewpro.shijigroup.com/"
 
     
     data=scrapeContact(baseUrl)
-    with open('scraped_contact.json', 'w') as file:
-        json.dump(data, file, indent=4)
+    with open('scraped_contact.json','w',encoding="utf-8") as file:
+        json.dump(data, file,ensure_ascii=False,indent=4)
 
     #####################################################
 
     data=findProductList(baseUrl=baseUrl)
-    with open('scraped_product.json', 'w') as file:
-        json.dump(data, file, indent=4)
+    with open('scraped_product_updated.json','w',encoding="utf-8") as file:
+        json.dump(data,file, ensure_ascii=False,indent=4)
 
 if __name__ == "__main__":
     main()
