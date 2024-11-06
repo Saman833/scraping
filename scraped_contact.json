@@ -1,0 +1,21 @@
+{
+    "Customer Support": {
+        "EMEA": "reviewpro.customersuccess@shijigroup.com",
+        "APAC": "reviewpro.asia@shijigroup.com",
+        "China": "reviewpro.china@shijigroup.com",
+        "USA": "reviewpro.us@shijigroup.com",
+        "Australia & New Zealand": "reviewpro.anz@shijigroup.com"
+    },
+    "Sales Inquiries": {
+        "Contact our Sales team": "reviewpro.sales@shijigroup.com"
+    },
+    "Partnership Opportunities": {
+        "Contact our Business Development team": "partnerships@shijigroup.com"
+    },
+    "Press": {
+        "Contact our PR team": "reviewpro.press@shijigroup.com"
+    },
+    "Billing Issues": {
+        "Contact our Finance team": "billing.spain@shijigroup.com"
+    }
+}

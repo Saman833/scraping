@@ -1,0 +1,17 @@
+{
+    "Products": {
+        "Guest Experience Platform": "https://reviewpro.shijigroup.com//products/guest-experience-platform",
+        "Hotel Reputation": "https://reviewpro.shijigroup.com//products/hotel-reputation",
+        "Guest Surveys": "https://reviewpro.shijigroup.com//products/guest-surveys",
+        "Case Management": "https://reviewpro.shijigroup.com//products/case-management",
+        "Guest Communications": "https://reviewpro.shijigroup.com//products/messaging-automation"
+    },
+    "Essentials": {
+        "Global Review Index\u00e2\u0084\u00a2": "https://reviewpro.shijigroup.com//essentials/global-review-index",
+        "Competitor Analysis": "https://reviewpro.shijigroup.com//essentials/competitor-analysis",
+        "AI-hotel Chatbot": "https://reviewpro.shijigroup.com//essentials/ai-hotel-chatbot",
+        "Mobile App": "https://reviewpro.shijigroup.com//essentials/mobile-app",
+        "Semantic Analysis": "https://reviewpro.shijigroup.com//essentials/semantic-analysis",
+        "Integrations": "https://reviewpro.shijigroup.com//integrations"
+    }
+}
